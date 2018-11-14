@@ -4,6 +4,7 @@ package com.lance.springboot.common;
  * Created by lance on 2018/11/12.
  * 解决跨域问题
  */
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -26,4 +27,6 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", buildConfig()); // 4
         return new CorsFilter(source);
     }
+
+
 }
